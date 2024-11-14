@@ -379,7 +379,7 @@ function App() {
 
 
   return (
-    <Router basename={import.meta.env.BASE_URL}>
+    <Router>
       <Routes>
         <Route path="/chiikawa/" element={<Home />} />
         <Route path="/chiikawa/characters" element={<Characters />} />

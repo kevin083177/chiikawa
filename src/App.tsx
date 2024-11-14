@@ -17,7 +17,7 @@ const Home = () => {
               <div className='col-md-16'>
                 <h1 className='display-1'>吉伊卡哇の小天地</h1>
                 <a className='btn' onClick={scrollToIntro} style={{cursor: 'pointer'}}>了解更多</a>
-                <a className='btn' href='/characters'>認識角色</a>
+                <a className='btn' href='/chiikawa/characters'>認識角色</a>
               </div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/Hachiware.jpg'></img>
+                <img src='./src/img/Hachiware.jpg'></img>
                 <div className='innertext'>
                   <h2>小八貓</h2>
                 </div>
@@ -82,7 +82,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/rabbit.png'></img>
+                <img src='./src/img/rabbit.png'></img>
                 <div className='innertext'>
                   <h2>兔兔</h2>
                 </div>
@@ -95,7 +95,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/Momonga.jpg'></img>
+                <img src='./src/img/Momonga.jpg'></img>
                 <div className='innertext'>
                   <h2>小桃鼠</h2>
                 </div>
@@ -108,7 +108,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/KuriManju.jpg'></img>
+                <img src='./src/img/KuriManju.jpg'></img>
                 <div className='innertext'>
                   <h2>栗子饅頭</h2>
                 </div>
@@ -121,7 +121,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/Rakko.jpg'></img>
+                <img src='./src/img/Rakko.jpg'></img>
                 <div className='innertext'>
                   <h2>海獺師傅</h2>
                 </div>
@@ -134,7 +134,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/Shisa.jpg'></img>
+                <img src='./src/img/Shisa.jpg'></img>
                 <div className='innertext'>
                   <h2>風獅爺</h2>
                 </div>
@@ -147,7 +147,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/SleepParty.jpg'></img>
+                <img src='./src/img/SleepParty.jpg'></img>
                 <div className='innertext'>
                   <h2>睡衣派對</h2>
                 </div>
@@ -160,7 +160,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/star.png'></img>
+                <img src='./src/img/star.png'></img>
                 <div className='innertext'>
                   <h2>流星</h2>
                 </div>
@@ -173,7 +173,7 @@ const Characters = () => {
           <div className='col-md-4 text-cener'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/Yoroi San3.jpg'></img>
+                <img src='./src/img/Yoroi San3.jpg'></img>
                 <div className='innertext'>
                   <h2>拉麵盔甲人</h2>
                 </div>
@@ -186,7 +186,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/Yoroi San2.jpg'></img>
+                <img src='./src/img/Yoroi San2.jpg'></img>
                 <div className='innertext'>
                   <h2>手工盔甲人</h2>
                 </div>
@@ -199,7 +199,7 @@ const Characters = () => {
           <div className='col-md-4 text-center'>
             <div className='outer'>
               <div className='upper'>
-                <img src='/src/img/Yoroi San1.jpg'></img>
+                <img src='./src/img/Yoroi San1.jpg'></img>
                 <div className='innertext'>
                   <h2>勞動盔甲人</h2>
                 </div>
@@ -214,7 +214,6 @@ const Characters = () => {
         <a className='btn' href='/quiz_information'>進行測驗</a>
       </div>
     </section>
-    
   );
 };
 
@@ -382,8 +381,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/characters" element={<Characters />} />
+        <Route path="/chiikawa/" element={<Home />} />
+        <Route path="/chiikawa/characters" element={<Characters />} />
         <Route path="/quiz_information" element={<Quiz_Information />} />
         <Route path="/quiz_question" element={<Quiz_Question score={score} setScore={setScore} />} />
         <Route path="/failed" element={<Failed score={score}/>} />

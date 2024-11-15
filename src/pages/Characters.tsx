@@ -181,7 +181,7 @@ export const Characters = () => {
               </div>
             </div>
           </div>
-          <a className='btn' href='/'>回首頁</a>
+          <a className='btn' href='#/'>回首頁</a>
           <a className='btn' href='#/quiz_information'>進行測驗</a>
         </div>
       </section>

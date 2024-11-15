@@ -20,7 +20,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<Characters />} />
         <Route path="/quiz_information" element={<Information />} />
-        <Route path="/quiz_question" element={<Quiz score={score} setScore={setScore} />} />
+        <Route path="/quiz_question" element={<Quiz setScore={setScore} />} />
         <Route path="/failed" element={<Fail score={score}/>} />
         <Route path="/pass" element={<Pass score={score}/>} />
       </Routes>

@@ -1,0 +1,61 @@
+.background{
+    background: url('../assets/background/home.png');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* home */
+.home .container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+  
+.home .col-md-16 h1, 
+.home .col-md-16 p{
+    color: rgb(255, 255, 255);
+    font-family: "maoken";
+}
+.home .col-md-16 h1{
+    text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    padding-bottom: 20px;
+}
+/* intro */
+.intro .container {
+    min-height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(65, 65, 65, 0.5);
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 8px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 45px;
+}
+.intro h1{
+    font-family: "Zen Maru Gothic", serif;
+    font-size: 76px;
+    padding-bottom: 20px;
+}
+.intro p{
+    font-family: "noto sans";
+    font-size: 24px;
+    padding: 5px;
+}
+/* theme */
+.theme .container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* recommend */
+.recommend .container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

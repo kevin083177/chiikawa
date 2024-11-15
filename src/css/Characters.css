@@ -1,0 +1,29 @@
+.characters .col-md-4 h2,
+.characters .col-md-4 h3 {
+    font-family: 'cwTeXYen', serif;
+    color: rgb(88, 55, 25);
+    font-weight: 600;
+}
+
+.characters .innertext h2 {
+    margin-top: 12px;
+    font-size: 40px;
+}
+
+.characters .lower h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.characters .col-md-4 {
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.characters .upper img {
+    position: relative;
+    right: 12px;
+    width: 90%;
+    height: auto;
+}

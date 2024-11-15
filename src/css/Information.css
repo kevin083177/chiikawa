@@ -1,0 +1,41 @@
+.quiz_i {
+    background-image: url("../assets/background/quiz_i.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 100px;
+    height: 100vh;
+}
+
+.quiz_i h1 {
+    font-family: "maoken";
+    font-size: 3em;
+}
+  
+.quiz_i p {
+    font-family: 'noto-sans';
+    font-size: 1.4em;
+    margin-top: 30px;
+}
+
+.quiz_i .form-check{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+  
+.quiz_i .form-check-input{
+    appearance: none;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 20px;
+    height: 20px;
+    transition: 0.2s all linear;
+    cursor: pointer;
+}
+
+.quiz_i .form-check-label{
+    font-family: 'noto-sans';
+    font-size: 1.4em;
+}

@@ -1,0 +1,43 @@
+.pass .bg{
+    background: url("../assets/background/pass_bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.pass .container{
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 40px;
+    padding: 20px;
+    width: 550px;
+}
+  
+.pass h2,
+.pass h3{
+    margin: 15px;
+    font-family: 'noto-sans';
+    font-size: 48px;
+    font-weight: 600;
+    text-shadow:
+          -1px -1px 0 black,
+          1px -1px 0 black,
+          -1px 1px 0 black,
+          1px 1px 0 black;
+}
+  
+.pass h2{
+    color: rgb(134, 251, 158);
+}
+
+.pass h3{
+    color: rgb(203, 230, 177);
+}
+
+.pass .btn{
+    margin-top: 15px;
+}

@@ -1,4 +1,7 @@
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
+
+import '../css/Characters.css'
 
 import Chiikawa from '../assets/characters/Chiikawa.jpg';
 import Hachiware from '../assets/characters/Hachiware.jpg';
@@ -14,6 +17,11 @@ import Yoroi_San2 from '../assets/characters/Yoroi San2.jpg';
 import Yoroi_San3 from '../assets/characters/Yoroi San3.jpg';
 
 export const Characters = () => {
+  const navigate = useNavigate();
+  function homePage() {
+    navigate('/')
+    window.scrollTo(0, 0);
+  }
     useEffect(() => {
       document.body.style.overflowX = 'hidden';
       return () => {
@@ -181,7 +189,7 @@ export const Characters = () => {
               </div>
             </div>
           </div>
-          <a className='btn' href='#/'>回首頁</a>
+          <a className='btn' onClick={homePage}>回首頁</a>
           <a className='btn' href='#/quiz_information'>進行測驗</a>
         </div>
       </section>

@@ -1,50 +1,49 @@
-# React + TypeScript + Vite
+# 吉伊卡哇網站設計
+---
+## 設計概念
+希望本網站能夠為瀏覽者帶來療癒與快樂，並讓大家更深入了解吉伊卡哇的奇妙世界
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+- 瀏覽者可點擊「認識角色」按鈕，查看吉伊卡哇角色的詳細介紹。  
+- 想測試對吉伊卡哇了解程度的使用者，可點擊「進行測驗」按鈕參與有趣的小測驗。  
+- 點擊首頁的「了解更多」按鈕，可快速掌握吉伊卡哇的故事背景與世界觀，讓瀏覽者對角色有初步的認識。  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 技術選用  
+為了確保網站快速、高效且穩定，我們採用了以下技術：
+1. **Vite**：提供輕量化且快速的開發環境，加速專案建置與開發流程。  
+2. **React**：使用模組化元件架構，實現動態功能，提供流暢的互動體驗，並提升開發效率。  
+3. **TypeScript**：進行型別檢查，讓程式碼結構更清晰，降低錯誤發生的可能性，同時提高維護性。  
+4. **CSS**：設計層次豐富、視覺吸引力高的樣式，並加入動態效果，讓網站更具趣味性與互動感。  
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 設計原則  
+本網站以現代簡約風格為設計核心，結合可愛的吉伊卡哇背景圖片，營造清新療癒的舒適體驗：
+1. **層次感與陰影設計**  
+   - 採用兩種主要陰影樣式，突顯重要元素並營造豐富的層次感。  
+2. **動態互動效果**  
+   - 滑鼠指向圖片或按鈕時，呈現懸停效果，增添操作趣味性與動態感。  
+3. **設計一致性**  
+   - 統一全站字體、按鈕樣式與陰影風格，確保畫面整體一致並提升視覺體驗。  
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 規劃  
+為了提高網站的開發彈性與後續維護的便利性，我們採用了以下規劃策略：  
+1. **元件拆分**  
+   - 將主要功能區塊（如角色介紹與測驗等功能）拆分為獨立元件，提升程式碼可複用性與擴充性，同時加快開發效率。  
+2. **TypeScript 介面應用**  
+   - 定義清晰的物件結構，讓開發者快速理解功能屬性與方法，避免型別錯誤，並提升程式碼的可讀性與一致性。  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+---
+
+## 分工表  
+| **成員** | **負責項目** |  
+|----------|--------------|  
+| 洪振凱    | 網站功能設計、頁面開發 |  
+| 鄭丞希    | 網頁測驗表單製作、資料蒐集 |  
+| 陳威伍    | 測驗題目構想、資料整理 |  
+| 施沛辰    | 文檔撰寫、資料蒐集 |  

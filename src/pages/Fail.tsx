@@ -1,6 +1,6 @@
-import '../css/Fail.css'
-
 import fail_audio from "../assets/audio/fail.mp3";
+
+import '../css/Fail.css'
 
 export const Fail = ({ score }: { score: number }) => {
   return(

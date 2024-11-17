@@ -1,14 +1,14 @@
 import { HashRouter as Router, Routes, Route} from 'react-router-dom';
 import { useState } from 'react';
 
-import './App.css';
-
 import { Home } from './pages/Home.tsx';
 import { Characters } from './pages/Characters.tsx';
 import { Information } from './pages/Information.tsx';
 import { Quiz } from './pages/Quiz.tsx';
 import { Pass } from './pages/Pass.tsx';
 import { Fail } from './pages/Fail.tsx';
+
+import './App.css'
 
 function App() {
 

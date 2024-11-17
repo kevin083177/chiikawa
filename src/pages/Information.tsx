@@ -6,12 +6,19 @@ import '../css/Information.css'
 export const Information = () => {
   const [checked, setChecked] = useState(false);
   const navigate = useNavigate();
-  function btn_question(){
+
+  function btn_question(): void{
     if(checked)
       navigate('/quiz_question');
     else
       alert("請先閱讀須知並勾選按鈕");
   }
+
+  function homePage(): void{
+    window.scrollTo(0, 0);
+    navigate('/')
+  }
+
   return (
     <section className='quiz_i'>
       <h1>吉伊卡哇小測驗</h1>
@@ -23,6 +30,7 @@ export const Information = () => {
         <input className="form-check-input" id="agree" type="checkbox" checked={checked} onChange={e => setChecked(e.target.checked)}/>
         <label className="form-check-label" htmlFor="agree">我已閱讀以上須知</label>
       </div>
+      <div className='btn' onClick={homePage}>回首頁</div>
       <div className='btn' onClick={btn_question}>開始測驗</div>
     </section>
   );

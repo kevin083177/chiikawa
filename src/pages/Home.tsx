@@ -1,19 +1,24 @@
+import { videoProps, videos } from '../data/video';
+import theme from '../assets/video/theme.mp4'
+
 import '../css/Home.css'
 
 export const Home = () => {
-
-  const scrollToIntro = () => {
-    const introSection = document.getElementById('intro');
+  function scrollTo(ElementId: string): void {
+    const introSection = document.getElementById(ElementId);
     if(introSection != null)
       introSection.scrollIntoView({ behavior: 'smooth' });
   };
+
   return (
     <section className='background'>
       <section className='home'>
         <div className='container'>
           <div className='col-md-16'>
             <h1 className='display-1'>吉伊卡哇の小天地</h1>
-            <a className='btn' onClick={scrollToIntro} style={{cursor: 'pointer'}}>了解更多</a>
+            <a className='btn' onClick={() => scrollTo('intro')}>故事概要</a>
+            <a className='btn' onClick={() => scrollTo('theme')}>主題曲</a>
+            <a className='btn' onClick={() => scrollTo('recommend')}>影片推薦</a>
             <a className='btn' href='#/characters'>認識角色</a>
           </div>
         </div>
@@ -31,23 +36,47 @@ export const Home = () => {
           </div>
         </div>
       </section>
-      <section className="theme">
+      <section id="theme" className="theme">
         <div className='container'>
           <div className='col-md-16'>
-            <p>以睡衣派對為主題，用快樂的節奏表達與朋友們共度快樂時光的羈絆， 搭配明快的旋律，讓人感受到快樂派對的氛圍，並且把煩惱全都忘掉。</p>
-            <iframe width="750" 
-                    height="420" 
-                    src="https://www.youtube.com/embed/xIICmvW3hkI?si=x4lzyiaWDAGChI6g">
-            </iframe>
+            <video src={ theme } {...videoProps}></video>
+            <div className='text-container'>
+              <h1>主題曲-睡衣派對之歌</h1>
+              <p>以睡衣派對為主題</p>
+              <p>使用快樂的節奏並搭配明快的旋律</p>
+              <p>表達與朋友們共度快樂時光的羈絆</p>
+              <p>讓人感受到快樂派對的氛圍</p>
+              <p>並且把煩惱全都忘掉</p>
+            </div>
           </div>
         </div>
       </section>
-      <section className="recommend">
+      <section id="recommend" className="recommend">
         <div className='container'>
+          <h1>影片推薦</h1>
           <div className='col-md-16'>
-            
-            <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=615050775&bvid=BV1Yh4y1u7eC&cid=1170029749&p=1">
-            </iframe>
+          {videos.slice(0, 3).map((video) => (
+            <div key={video.id} className="video-container">
+              <div className="video">
+                <video src={video.src} {...videoProps} />
+              </div>
+              <div className="title">
+                <p>{video.title}</p>
+              </div>
+            </div>
+          ))}
+          </div>
+          <div className='col-md-16'>
+          {videos.slice(3, 6).map((video) => (
+            <div key={video.id} className="video-container">
+              <div className="video">
+                <video src={video.src} {...videoProps} />
+              </div>
+              <div className="title">
+                <p>{video.title}</p>
+              </div>
+            </div>
+          ))}
           </div>
         </div>
       </section>

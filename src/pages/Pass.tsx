@@ -1,6 +1,6 @@
-import '../css/Pass.css'
-
 import pass_audio from "../assets/audio/pass.mp3";
+
+import '../css/Pass.css'
 
 export const Pass = ({ score }: { score: number }) => {
   return(

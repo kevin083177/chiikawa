@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { answer, questions } from '../data/question.tsx';
+
+import { answer, questions } from '../data/question';
 
 import '../css/Quiz.css'
 

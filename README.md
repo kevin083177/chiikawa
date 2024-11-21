@@ -1,5 +1,5 @@
 # 吉伊卡哇網站設計
-https://kevin083177.github.io/chiikawa/
+Github Pages: https://kevin083177.github.io/chiikawa/
 ## 設計概念
 希望本網站能夠為瀏覽者帶來療癒與快樂，並讓大家更深入了解吉伊卡哇的奇妙世界
 

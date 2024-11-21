@@ -7,7 +7,6 @@ import { Information } from './pages/Information';
 import { Quiz } from './pages/Quiz';
 import { Pass } from './pages/Pass';
 import { Fail } from './pages/Fail';
-import { Test } from './pages/Test';
 
 import './App.css'
 
@@ -24,7 +23,6 @@ function App() {
           <Route path="/quiz_question" element={<Quiz setScore={setScore} />} />
           <Route path="/failed" element={<Fail score={score}/>} />
           <Route path="/pass" element={<Pass score={score}/>} />
-          <Route path="/test" element={<Test />} />
         </Routes>
       </Router>
   );

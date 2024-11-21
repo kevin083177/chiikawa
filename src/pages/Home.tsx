@@ -79,6 +79,9 @@ export const Home = () => {
           ))}
           </div>
         </div>
+        <div className='home-button'>
+          <a className='btn' onClick={() => window.scroll(0, 0)}>回到頂部</a>
+        </div>
       </section>
     </section>
   );
